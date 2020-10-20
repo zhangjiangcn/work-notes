@@ -8,7 +8,7 @@
             </tr>
             <template v-for="items in cnys">
                 <tr v-for="item in items" :key="item.name">
-                    <td class="item nowrap" :class="item.color?item.color:''">
+                    <td class="item wrap" :class="item.color?item.color:''">
                         {{item.name}}
                     </td>
                     <td class="item nowrap" :class="item.color?item.color:''">
@@ -64,7 +64,7 @@
     }
 
     table {
-        margin: 0 auto;
+        margin: 10px auto 0;
     }
 
     table tr {
@@ -77,6 +77,10 @@
 
     .nowrap {
         white-space: nowrap;
+    }
+
+    .wrap{
+        white-space: normal;
     }
 
     .name {

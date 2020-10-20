@@ -37,7 +37,7 @@
     @import "node_modules/vant/es/style/var.less";
 
     .wrap {
-        margin: 15px 0;
+        padding: 15px 0;
     }
 
     .title {

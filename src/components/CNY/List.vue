@@ -3,8 +3,15 @@
         <div class="item-wrap" v-for="(items,index1) in cnys" :key="index1">
             <div v-for="(item,index) in items" :key="index">
                 <div class="c-item">
-                    <div class="name text-color" :class="item.color?item.color:''">{{item.name}}</div>
                     <table>
+                        <tr>
+                            <td class="label" :class="item.color?item.color:''">
+                                名称:
+                            </td>
+                            <td class="item" :class="item.color?item.color:''">
+                                {{item.name}}
+                            </td>
+                        </tr>
                         <tr>
                             <td class="label">
                                 起止:
@@ -90,6 +97,7 @@
         margin: 10px 10px 20px;
         background-color: #fcfcfc;
         padding: 15px 0;
+        border-radius: 2px;
     }
 
     table tr td {
