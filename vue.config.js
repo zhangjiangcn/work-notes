@@ -8,7 +8,7 @@ module.exports = {
     config
         .plugin('html')
         .tap(args => {
-          args[0].title = "实习笔记"
+          args[0].title = "my notes"
           return args
         })
   },
